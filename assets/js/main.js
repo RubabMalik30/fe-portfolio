@@ -254,7 +254,7 @@ function handleFormSubmit(e) {
   const formData = {
     name: form.querySelector("#name").value,
     email: form.querySelector("#email").value,
-    phone: "+1234567890", // Default phone number
+    phone: form.querySelector("#phone").value,
     subject: form.querySelector("#subject").value,
     message: form.querySelector("#message").value,
   };
@@ -264,7 +264,7 @@ function handleFormSubmit(e) {
   submitBtn.disabled = true;
 
   // Make API call
-  fetch("http://localhost:3000/api/contact", {
+  fetch("https://be-portfolio-five.vercel.app/api/contact", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
