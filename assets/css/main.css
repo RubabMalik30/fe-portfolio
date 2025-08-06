@@ -1199,6 +1199,21 @@ section,
 .portfolio-details .portfolio-info .btn-visit:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
+input#phone {
+    font-size: 14px;
+    padding: 10px 15px;
+    box-shadow: none;
+    border-radius: 0;
+    /* color: var(--default-color); */
+    /* background-color: 
+ color-mix(in srgb, var(--background-color), transparent 50%); */
+    border-color: 
+ color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+input#phone::placeholder{
+  color: #888888;
+}
 
 .portfolio-details .portfolio-description h2 {
   font-size: 26px;
